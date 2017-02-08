@@ -14573,7 +14573,7 @@ RAdLshYRERHRwZKsRURERHSwJGsRERERHSzJWkREREQHS7IWERER0cGSrEVERER0sP8BK3ne/TEO
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>When the model is trained with a maximum depth of 1, the model suffers from high bias since training score and validation score are so close together and variance is low as viewed in the graph. When the model is trained with maximum depth of 10, the model suffers from high variance since the validation score is varied more widely and the bias is low since the two curves are so far apart.</p>
+<p>When the model is trained with a maximum depth of 1, the model suffers from high bias since the scores for both training and validation are just above 0.4. Also, the training score and validation score are close together and validation score doesn't vary as much for max_depth = 1, which means that variance is low as viewed in the graph. When the model is trained with maximum depth = 10, the model suffers from high variance since the validation score is varied more widely and the two curves are so far apart, but the scores for both are higher than at max_depth = 1, so this indicates lower bias.</p>
 
 </div>
 </div>
